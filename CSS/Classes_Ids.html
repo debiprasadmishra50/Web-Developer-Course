@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Webpage with style</title>
+		<style type="text/css">
+			.red /*--> class selector*/
+			{
+				color: red;
+			}
+			.large
+			{										/*Priority is given to id*/
+				color: blue;
+				font-size: 200%;
+			}
+			#green  /*--> id selector*/
+			{
+				color: green;
+				font-size: 300%
+			}
+			.underlined
+			{
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="red large">My name is Debi Prasad Mishra.</p> <!-- Multiple clases in a single line -->
+		<p id="green" class="large">Internal Css is Cool</p>    <!-- id + class -->
+		<p class="large" id="green">This is some more text. <span class="large underlined">And this text is underlined</span></p>	<!-- class+id -->
+		<h1 class="red">CSS is cool</h1>						<!-- class -->
+	</body>
+</html>

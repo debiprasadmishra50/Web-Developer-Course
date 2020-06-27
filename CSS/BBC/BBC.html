@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Technology BBC-News</title>
+	<style type="text/css">
+		#topbar
+		{
+			width: 1000px;
+			margin: 0 auto;
+			height: 40px;
+			/*background-color: red;*/
+		}
+		body
+		{
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif, Helvetica;
+		}
+		#logo
+		{
+			width: 100px;
+			margin-top: -28px;
+			margin-left: -170px;
+			float: left;
+			
+		}
+		.topbarsection
+		{
+			float: left;
+			border-left: 2px #CCCCCC solid;
+			height: 100%;
+			margin-left: -60px;
+		}
+		#signin-image
+		{
+			width: 40px;
+			margin-top: 3px;
+			margin-left: 8px;
+			float: left;
+		}
+		#signin-text
+		{
+			font-weight: bold;
+			font-size: 90%;
+			position: relative;
+			top: 11px;
+			left: 7px;
+		
+		}
+		.signin-border
+		{
+			float: left;
+			border-right: 2px #CCCCCC solid; 
+			height: 100%;
+			padding-left: 30px;
+		}
+		#bell
+		{
+			float: left;
+			height: 30px;
+			width: 30px;
+			margin: 3px 5px;
+		}
+		.border
+		{
+			float: left;
+			border-right: 2px #CCCCCC solid; 
+			height: 100%;
+			padding-left: 10px;
+
+		}
+		.menuItems
+		{
+			float: left;
+			margin: 13px 12px;
+			font-weight: bold;
+		}
+		#search-box
+		{
+			background-color: #E4E4E4;
+			border: none;
+			font-weight: bold;
+			font-size: 14px;
+			padding: 5px;
+			margin: 5px 0px 5px 5px;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div id="topbar">
+		<img src="bbclogo.png" id="logo">
+
+		<div id="signin" class="topbarsection">
+			<img src="signin.jpg" id="signin-image">
+			<span id="signin-text">Sign In</span>
+		</div>
+
+		<div class="signin-border"></div>
+
+		<div id="bell">
+			<img src="bell.jpg" id="bell">
+		</div>
+
+		<div class="border"></div>
+		<div class="menuItems">News</div>
+
+		<div class="border"></div>
+		<div class="menuItems">Sports</div>
+
+		<div class="border"></div>
+		<div class="menuItems">Weather</div>
+
+		<div class="border"></div>
+		<div class="menuItems">iPlayer</div>
+
+		<div class="border"></div>
+		<div class="menuItems">TV</div>
+
+		<div class="border"></div>
+		<div class="menuItems">
+			More
+			<img src="MoreArrow.png" height="13" width="11" style="float: right; padding-left: 12px; padding-top: 2px;">
+		</div>
+		<div class="border"></div>
+
+		<div class="topbar-section">
+			<input type="text" id="search-box" placeholder="Search">
+			<input type="image" src="searchGlass.png" width="25" height="100%" style="margin-top: 5px;" >
+		</div>
+
+	</div>
+	
+</body>
+</html>

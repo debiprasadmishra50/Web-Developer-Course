@@ -1,0 +1,174 @@
+Inline_Css
+------------------
+<p style="color: blue; font-size: 55px">My name is Debi Prasad Mishra.</p>
+<h1 style="color: green;font-size: 200%">CSS is cool</h1>
+
+use style attribute inside a tag to do so...
+color: blue --> make the text color blue
+; --> a separator
+font-size: 200% OR 55px --> make the size of the font, __% is relative % of the tag, __px is the pixel, large or small
+
+
+Internal_Css
+--------------------------
+<title>Webpage with style</title>
+		<style type="text/css"> 	--> style tag inside head section
+			p 						--> tag name to which you want to style
+			{
+				color: red;			--> make the text color red
+				font-size: 200%;	--> set the font size
+			}
+			h1
+			{
+				color: pink;
+				font-size: 250%;
+			}
+		</style>
+
+
+class attribute : inside a tag refers as a specific type of tag and will be styled later
+		Caught by .class_name{___}
+
+id attribute : inside a tag refers a special type of tag n will be styled later
+		Caught by #id_name{___}
+
+Priority is given to id attribute
+
+
+
+<div></div>    -->   Creates a divison tag, can be given an id or class and can be caught
+		<div id="first-section">
+			<p>My name is Debi Prasad Mishra.</p> 
+			<p>Internal Css is Cool</p>    
+		</div>
+		<style type="text/css">
+		#first-section
+			{
+				color: blue;
+				background-color: pink;
+				width: 50%; --> divison width
+				width: 1310px;
+			}
+		</style>
+
+
+
+#first-section
+{
+	color: blue;
+	background-color: pink;
+	width: 200px;
+	
+
+	position: relative; --> we can set the position --> relative/fixed/absolute
+									fixed --> the position remains fixed , even if you scroll the page
+									absolute --> takes the element out of the flow of the page
+	left: 100px; --> from left side of browser the gap
+	/*left: -100px;*/ --> outside the screen in left side
+	top: 100px; --> gap from the top side
+	z-index: 1; --> makes the division appear over another of whose dimensin is high
+	opacity: 0.5; -->0-invisible, 1-absolute solid --> Transparency of div
+}
+
+
+
+margin : Creates margin all around the divison
+syntax : 
+	margin 100px; --> Creates margin all around the divison
+	margin top right bottom left; --> creates margin as per values in sides.
+	margin (top & bottom)px (left & right)px;
+individually
+margin-left : __px;
+margin-right : __px;
+margin-top : __px;
+margin-bottom : __px;
+
+
+
+padding : Creates gap all inside the divison
+syntax : 
+	padding 100px; --> Creates spaece all inside the divison
+	padding top right bottom left; --> creates gap as per values inside the divison.
+	padding (top & bottom)px (left & right)px;
+individually
+padding-left : __px;
+padding-right : __px;
+poadding-top : __px;
+padding-bottom : __px;
+
+
+
+
+
+border: 10px black solid; --> a single type all around the divison
+border: width colour type; --> Creates a border all around the divison.
+
+		type : none / hidden / dotted / dashed / solid / double / groove / ridge / inset / outset / initial / inherit
+
+
+border-style : top right bottom left; --> can be of any type of above
+border-color : top right bottom left; --> set colors to side of borders
+
+***TO Create a Circle
+--------------------------------
+border-radius: 75px; /*make the half of the border width to creatye a circle
+					Or make the border-radius: 50%; It will create a circle irrespective of the width*/
+
+
+
+
+
+
+Fonts
+--------------
+bold : font-weight: bold;
+italic : font-style: italic;
+underline : text-decoration: underline; 
+
+<a href="">This is a link</a> 	--> a link
+<style type="text/css">
+	a 								--> decoration by default on page
+	{
+		text-decoration: none; 		
+	}
+	a:hover							--> decoration when mouse is on the link
+	{
+		text-decoration: underline;   
+		color: red;
+	}
+</style>
+
+text-align: right; --> makes the text align to right inside a divison
+
+
+
+
+Style-Links
+--------------------
+a:hover		--> mouse over link
+{
+	text-decoration: underline;
+	color: red;
+}
+a:visited		--> visited links
+{
+	color: green;
+}
+a:link		--> un-visited links
+{
+	color: green;
+}
+a:active		--> selected links
+{
+	color: green;
+}
+
+
+
+
+
+
+
+
+
+
